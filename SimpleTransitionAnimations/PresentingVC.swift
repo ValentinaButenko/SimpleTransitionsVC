@@ -9,21 +9,33 @@
 import UIKit
 import SnapKit
 
-class PresentingVC: UIViewController {
+class PresentingVC: UIViewController{
 
     var dismissButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
        self.view.backgroundColor = UIColor.greenColor()
+        self.setup()
     }
 
     func setup(){
-
+        self.setupDismissButton()
     }
 
     func setupDismissButton(){
         let dismissButton = UIButton(type: .System)
         dismissButton.setTitle("Dismiss", forState: .Normal)
-        
+        dismissButton.addTarget(self, action: #selector(PresentingVC.showSelectionVC(_:)), forControlEvents: .TouchUpInside)
+        self.view.addSubview(dismissButton)
+
+        dismissButton.snp_makeConstraints { (make) in
+            make.centerX.centerY.equalTo(view)
+        }
+        self.dismissButton = dismissButton
+    }
+
+    func showSelectionVC(sender: UIButton){
+        let vc = SelectionVC()
+        self.presentViewController(vc, animated: true, completion: nil)
     }
 }

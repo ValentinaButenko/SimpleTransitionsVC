@@ -67,6 +67,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F6110C721D82E59D0076E3B2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F6110C6C1D82DE400076E3B2 /* PresentingVC.swift */,
+				F62CB2371D82AEDD00FB6A3D /* SelectionVC.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		F6110C731D82E5B10076E3B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6110C621D82B1490076E3B2 /* SimpleBorderView.swift */,
+				F6110C6A1D82D85F0076E3B2 /* ExplanationText.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F6110C741D82E5CF0076E3B2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F6110C681D82CEB90076E3B2 /* BlurEffect.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		F6110C751D82E5E30076E3B2 /* AnimationApperanceController */ = {
+			isa = PBXGroup;
+			children = (
+				F6110C6E1D82DEC60076E3B2 /* FirstCustomAnimationController.swift */,
+			);
+			name = AnimationApperanceController;
+			sourceTree = "<group>";
+		};
+		F6110C761D82E5F50076E3B2 /* AnimationDismissController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AnimationDismissController;
+			sourceTree = "<group>";
+		};
+		F6110C771D82E60E0076E3B2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F6110C641D82C3A00076E3B2 /* Names.swift */,
+				F62CB23C1D82AEDD00FB6A3D /* Assets.xcassets */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		F62CB2291D82AEDD00FB6A3D = {
 			isa = PBXGroup;
 			children = (
@@ -88,17 +138,15 @@
 		F62CB2341D82AEDD00FB6A3D /* SimpleTransitionAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				F6110C771D82E60E0076E3B2 /* Data */,
+				F6110C761D82E5F50076E3B2 /* AnimationDismissController */,
+				F6110C751D82E5E30076E3B2 /* AnimationApperanceController */,
+				F6110C741D82E5CF0076E3B2 /* Extension */,
+				F6110C731D82E5B10076E3B2 /* View */,
+				F6110C721D82E59D0076E3B2 /* ViewController */,
 				F62CB2351D82AEDD00FB6A3D /* AppDelegate.swift */,
-				F62CB2371D82AEDD00FB6A3D /* SelectionVC.swift */,
-				F62CB23C1D82AEDD00FB6A3D /* Assets.xcassets */,
 				F62CB23E1D82AEDD00FB6A3D /* LaunchScreen.storyboard */,
 				F62CB2411D82AEDD00FB6A3D /* Info.plist */,
-				F6110C621D82B1490076E3B2 /* SimpleBorderView.swift */,
-				F6110C641D82C3A00076E3B2 /* Names.swift */,
-				F6110C681D82CEB90076E3B2 /* BlurEffect.swift */,
-				F6110C6A1D82D85F0076E3B2 /* ExplanationText.swift */,
-				F6110C6C1D82DE400076E3B2 /* PresentingVC.swift */,
-				F6110C6E1D82DEC60076E3B2 /* FirstCustomAnimationController.swift */,
 			);
 			path = SimpleTransitionAnimations;
 			sourceTree = "<group>";

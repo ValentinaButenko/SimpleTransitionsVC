@@ -10,7 +10,7 @@ import Foundation
 
 struct Names {
     static let flowers = "flowers.png"
-    static let light = "light.png"
+    static let chocko = "chocko.png"
     static let template = "templates.png"
     static let amount: Float = 3
 }

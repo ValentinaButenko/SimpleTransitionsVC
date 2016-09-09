@@ -11,6 +11,9 @@
 		F6110C631D82B1490076E3B2 /* SimpleBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C621D82B1490076E3B2 /* SimpleBorderView.swift */; };
 		F6110C651D82C3A00076E3B2 /* Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C641D82C3A00076E3B2 /* Names.swift */; };
 		F6110C691D82CEB90076E3B2 /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C681D82CEB90076E3B2 /* BlurEffect.swift */; };
+		F6110C6B1D82D85F0076E3B2 /* ExplanationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C6A1D82D85F0076E3B2 /* ExplanationText.swift */; };
+		F6110C6D1D82DE400076E3B2 /* PresentingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C6C1D82DE400076E3B2 /* PresentingVC.swift */; };
+		F6110C6F1D82DEC60076E3B2 /* FirstCustomAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C6E1D82DEC60076E3B2 /* FirstCustomAnimationController.swift */; };
 		F62CB2361D82AEDD00FB6A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CB2351D82AEDD00FB6A3D /* AppDelegate.swift */; };
 		F62CB2381D82AEDD00FB6A3D /* SelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CB2371D82AEDD00FB6A3D /* SelectionVC.swift */; };
 		F62CB23D1D82AEDD00FB6A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62CB23C1D82AEDD00FB6A3D /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 		F6110C621D82B1490076E3B2 /* SimpleBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBorderView.swift; sourceTree = "<group>"; };
 		F6110C641D82C3A00076E3B2 /* Names.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Names.swift; sourceTree = "<group>"; };
 		F6110C681D82CEB90076E3B2 /* BlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
+		F6110C6A1D82D85F0076E3B2 /* ExplanationText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplanationText.swift; sourceTree = "<group>"; };
+		F6110C6C1D82DE400076E3B2 /* PresentingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentingVC.swift; sourceTree = "<group>"; };
+		F6110C6E1D82DEC60076E3B2 /* FirstCustomAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCustomAnimationController.swift; sourceTree = "<group>"; };
 		F62CB2321D82AEDD00FB6A3D /* SimpleTransitionAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTransitionAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62CB2351D82AEDD00FB6A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F62CB2371D82AEDD00FB6A3D /* SelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionVC.swift; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 				F6110C621D82B1490076E3B2 /* SimpleBorderView.swift */,
 				F6110C641D82C3A00076E3B2 /* Names.swift */,
 				F6110C681D82CEB90076E3B2 /* BlurEffect.swift */,
+				F6110C6A1D82D85F0076E3B2 /* ExplanationText.swift */,
+				F6110C6C1D82DE400076E3B2 /* PresentingVC.swift */,
+				F6110C6E1D82DEC60076E3B2 /* FirstCustomAnimationController.swift */,
 			);
 			path = SimpleTransitionAnimations;
 			sourceTree = "<group>";
@@ -217,8 +226,11 @@
 			files = (
 				F6110C631D82B1490076E3B2 /* SimpleBorderView.swift in Sources */,
 				F6110C651D82C3A00076E3B2 /* Names.swift in Sources */,
+				F6110C6D1D82DE400076E3B2 /* PresentingVC.swift in Sources */,
+				F6110C6B1D82D85F0076E3B2 /* ExplanationText.swift in Sources */,
 				F62CB2381D82AEDD00FB6A3D /* SelectionVC.swift in Sources */,
 				F62CB2361D82AEDD00FB6A3D /* AppDelegate.swift in Sources */,
+				F6110C6F1D82DEC60076E3B2 /* FirstCustomAnimationController.swift in Sources */,
 				F6110C691D82CEB90076E3B2 /* BlurEffect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

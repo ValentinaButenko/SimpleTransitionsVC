@@ -27,7 +27,7 @@ class SimpleBorderView: UIView{
         label.contentMode = .Center
 
         label.text = "Simple Transition Animations between VC"
-        label.font = UIFont(name: "HelveticaNeue-Light", size: 18)
+        label.font = UIFont(name: "HelveticaNeue-UltraLight", size: 18)
         label.textColor = UIColor(red: 108/255, green: 122/255, blue: 137/255, alpha: 1.0)
 
         self.addSubview(label)

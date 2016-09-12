@@ -1,12 +1,24 @@
 PODS:
   - SnapKit (0.30.0.beta2)
+  - SwiftEventBus (1.1.0)
 
 DEPENDENCIES:
   - SnapKit (= 0.30.0.beta2)
+  - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`)
+
+EXTERNAL SOURCES:
+  SwiftEventBus:
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
+
+CHECKOUT OPTIONS:
+  SwiftEventBus:
+    :commit: 4b8cbb5a8227b3c29af75e0416689d26178733d8
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
 
 SPEC CHECKSUMS:
   SnapKit: c4bb32b1d3c5d18ff63bf95ffcbc599d2bab964c
+  SwiftEventBus: d334f7aecbddbd995c3de5c262cf35c72db550f3
 
-PODFILE CHECKSUM: 92fcc1429da8c7d819190fc7bcd3ef260ea38d52
+PODFILE CHECKSUM: 937db69141c3b93b22eb666cd378842c40c0874a
 
 COCOAPODS: 1.0.1

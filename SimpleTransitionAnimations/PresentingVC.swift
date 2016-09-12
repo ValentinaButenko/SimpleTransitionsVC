@@ -35,7 +35,6 @@ class PresentingVC: UIViewController{
     }
 
     func showSelectionVC(sender: UIButton){
-        let vc = SelectionVC()
-        self.presentViewController(vc, animated: true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

@@ -19,6 +19,7 @@ class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
     var buttonsHeight: CGFloat!
 
     let firstCustomAnimationController = FirstCustomAnimationController()
+    let secondCustonAnimationController = SecondCustomTransitionController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,6 +83,7 @@ class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
         }
 
         imgView.contentMode = .ScaleAspectFill
+        secondButton.addTarget(self, action: #selector(SelectionVC.showFirstAnimation(_:)), forControlEvents: .TouchUpInside)
 
         self.view.addSubview(secondButton)
 
@@ -163,6 +165,10 @@ class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
     }
 
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return firstCustomAnimationController
+    }
+
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return firstCustomAnimationController
     }
 }

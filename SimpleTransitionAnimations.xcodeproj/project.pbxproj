@@ -14,6 +14,7 @@
 		F6110C6B1D82D85F0076E3B2 /* ExplanationText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C6A1D82D85F0076E3B2 /* ExplanationText.swift */; };
 		F6110C6D1D82DE400076E3B2 /* PresentingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C6C1D82DE400076E3B2 /* PresentingVC.swift */; };
 		F6110C6F1D82DEC60076E3B2 /* FirstCustomAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C6E1D82DEC60076E3B2 /* FirstCustomAnimationController.swift */; };
+		F6110C7B1D86C7850076E3B2 /* SecondCustomTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C7A1D86C7850076E3B2 /* SecondCustomTransitionController.swift */; };
 		F62CB2361D82AEDD00FB6A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CB2351D82AEDD00FB6A3D /* AppDelegate.swift */; };
 		F62CB2381D82AEDD00FB6A3D /* SelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CB2371D82AEDD00FB6A3D /* SelectionVC.swift */; };
 		F62CB23D1D82AEDD00FB6A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62CB23C1D82AEDD00FB6A3D /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		F6110C6A1D82D85F0076E3B2 /* ExplanationText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplanationText.swift; sourceTree = "<group>"; };
 		F6110C6C1D82DE400076E3B2 /* PresentingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentingVC.swift; sourceTree = "<group>"; };
 		F6110C6E1D82DEC60076E3B2 /* FirstCustomAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCustomAnimationController.swift; sourceTree = "<group>"; };
+		F6110C7A1D86C7850076E3B2 /* SecondCustomTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondCustomTransitionController.swift; sourceTree = "<group>"; };
 		F62CB2321D82AEDD00FB6A3D /* SimpleTransitionAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTransitionAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62CB2351D82AEDD00FB6A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F62CB2371D82AEDD00FB6A3D /* SelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionVC.swift; sourceTree = "<group>"; };
@@ -97,15 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				F6110C6E1D82DEC60076E3B2 /* FirstCustomAnimationController.swift */,
+				F6110C7A1D86C7850076E3B2 /* SecondCustomTransitionController.swift */,
 			);
 			name = AnimationApperanceController;
-			sourceTree = "<group>";
-		};
-		F6110C761D82E5F50076E3B2 /* AnimationDismissController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = AnimationDismissController;
 			sourceTree = "<group>";
 		};
 		F6110C771D82E60E0076E3B2 /* Data */ = {
@@ -139,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				F6110C771D82E60E0076E3B2 /* Data */,
-				F6110C761D82E5F50076E3B2 /* AnimationDismissController */,
 				F6110C751D82E5E30076E3B2 /* AnimationApperanceController */,
 				F6110C741D82E5CF0076E3B2 /* Extension */,
 				F6110C731D82E5B10076E3B2 /* View */,
@@ -273,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6110C631D82B1490076E3B2 /* SimpleBorderView.swift in Sources */,
+				F6110C7B1D86C7850076E3B2 /* SecondCustomTransitionController.swift in Sources */,
 				F6110C651D82C3A00076E3B2 /* Names.swift in Sources */,
 				F6110C6D1D82DE400076E3B2 /* PresentingVC.swift in Sources */,
 				F6110C6B1D82D85F0076E3B2 /* ExplanationText.swift in Sources */,

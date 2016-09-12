@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B608B29C521D0C7A3CB77BC16681EC6A"
+               BlueprintIdentifier = "CD7BF39EBEDAF0FCB91F6038A894298D"
                BuildableName = "Pods_SimpleTransitionAnimations.framework"
                BlueprintName = "Pods-SimpleTransitionAnimations"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B608B29C521D0C7A3CB77BC16681EC6A"
+            BlueprintIdentifier = "CD7BF39EBEDAF0FCB91F6038A894298D"
             BuildableName = "Pods_SimpleTransitionAnimations.framework"
             BlueprintName = "Pods-SimpleTransitionAnimations"
             ReferencedContainer = "container:Pods.xcodeproj">

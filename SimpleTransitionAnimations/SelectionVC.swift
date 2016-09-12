@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import SwiftEventBus
 
 class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
 
@@ -18,8 +19,11 @@ class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
 
     var buttonsHeight: CGFloat!
 
+    var selectedButton: String!
+
     let firstCustomAnimationController = FirstCustomAnimationController()
-    let secondCustonAnimationController = SecondCustomTransitionController()
+    let secondCustomAnimationController = SecondCustomTransitionController()
+    let thirdCustomAnimationControler = ThirdCustomAnimationController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +63,8 @@ class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
         }
 
         imgView.contentMode = .ScaleAspectFill
-        firstButton.addTarget(self, action: #selector(SelectionVC.showFirstAnimation(_:)), forControlEvents: .TouchUpInside)
+
+        firstButton.addTarget(self, action: #selector(SelectionVC.actionOnButtonsClick(_:)), forControlEvents: .TouchUpInside)
 
         self.view.addSubview(firstButton)
 
@@ -83,7 +88,7 @@ class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
         }
 
         imgView.contentMode = .ScaleAspectFill
-        secondButton.addTarget(self, action: #selector(SelectionVC.showFirstAnimation(_:)), forControlEvents: .TouchUpInside)
+        secondButton.addTarget(self, action: #selector(SelectionVC.actionOnButtonsClick(_:)), forControlEvents: .TouchUpInside)
 
         self.view.addSubview(secondButton)
 
@@ -107,6 +112,7 @@ class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
         }
 
         imgView.contentMode = .ScaleAspectFill
+        thirdButton.addTarget(self, action: #selector(SelectionVC.actionOnButtonsClick(_:)), forControlEvents: .TouchUpInside)
 
         self.view.addSubview(thirdButton)
 
@@ -158,6 +164,21 @@ class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
         self.buttonsHeight = buttonHeight
     }
 
+    func actionOnButtonsClick(sender: UIButton){
+        if sender == self.firstButton{
+            self.selectedButton = ActionsName.first
+            self.showFirstAnimation(sender)
+        }
+        else if sender == self.secondButton{
+            self.selectedButton = ActionsName.second
+            self.showFirstAnimation(sender)
+        }
+        else if sender == self.thirdButton{
+            self.selectedButton = ActionsName.third
+            self.showFirstAnimation(sender)
+        }
+    }
+
     func showFirstAnimation(sender: UIButton){
         let toVC = PresentingVC()
         toVC.transitioningDelegate = self
@@ -165,11 +186,25 @@ class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
     }
 
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return firstCustomAnimationController
+        let result = self.transitionsSelector()
+        return result
     }
 
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return firstCustomAnimationController
+        let result = self.transitionsSelector()
+        return result
+    }
+
+    func transitionsSelector() -> UIViewControllerAnimatedTransitioning?{
+        if self.selectedButton == ActionsName.first{
+            return firstCustomAnimationController
+        }
+        else if self.selectedButton == ActionsName.second{
+            return secondCustomAnimationController
+        }
+        else{
+            return thirdCustomAnimationControler
+        }
     }
 }
 

@@ -15,6 +15,8 @@
 		F6110C6D1D82DE400076E3B2 /* PresentingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C6C1D82DE400076E3B2 /* PresentingVC.swift */; };
 		F6110C6F1D82DEC60076E3B2 /* FirstCustomAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C6E1D82DEC60076E3B2 /* FirstCustomAnimationController.swift */; };
 		F6110C7B1D86C7850076E3B2 /* SecondCustomTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C7A1D86C7850076E3B2 /* SecondCustomTransitionController.swift */; };
+		F6110C7D1D86D4890076E3B2 /* ActionsName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C7C1D86D4890076E3B2 /* ActionsName.swift */; };
+		F6110C7F1D86DEE70076E3B2 /* ThirdCustomAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6110C7E1D86DEE70076E3B2 /* ThirdCustomAnimationController.swift */; };
 		F62CB2361D82AEDD00FB6A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CB2351D82AEDD00FB6A3D /* AppDelegate.swift */; };
 		F62CB2381D82AEDD00FB6A3D /* SelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62CB2371D82AEDD00FB6A3D /* SelectionVC.swift */; };
 		F62CB23D1D82AEDD00FB6A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62CB23C1D82AEDD00FB6A3D /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		F6110C6C1D82DE400076E3B2 /* PresentingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentingVC.swift; sourceTree = "<group>"; };
 		F6110C6E1D82DEC60076E3B2 /* FirstCustomAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCustomAnimationController.swift; sourceTree = "<group>"; };
 		F6110C7A1D86C7850076E3B2 /* SecondCustomTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondCustomTransitionController.swift; sourceTree = "<group>"; };
+		F6110C7C1D86D4890076E3B2 /* ActionsName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsName.swift; sourceTree = "<group>"; };
+		F6110C7E1D86DEE70076E3B2 /* ThirdCustomAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdCustomAnimationController.swift; sourceTree = "<group>"; };
 		F62CB2321D82AEDD00FB6A3D /* SimpleTransitionAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTransitionAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62CB2351D82AEDD00FB6A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F62CB2371D82AEDD00FB6A3D /* SelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionVC.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 			children = (
 				F6110C6E1D82DEC60076E3B2 /* FirstCustomAnimationController.swift */,
 				F6110C7A1D86C7850076E3B2 /* SecondCustomTransitionController.swift */,
+				F6110C7E1D86DEE70076E3B2 /* ThirdCustomAnimationController.swift */,
 			);
 			name = AnimationApperanceController;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				F6110C641D82C3A00076E3B2 /* Names.swift */,
+				F6110C7C1D86D4890076E3B2 /* ActionsName.swift */,
 				F62CB23C1D82AEDD00FB6A3D /* Assets.xcassets */,
 			);
 			name = Data;
@@ -269,12 +275,14 @@
 			files = (
 				F6110C631D82B1490076E3B2 /* SimpleBorderView.swift in Sources */,
 				F6110C7B1D86C7850076E3B2 /* SecondCustomTransitionController.swift in Sources */,
+				F6110C7D1D86D4890076E3B2 /* ActionsName.swift in Sources */,
 				F6110C651D82C3A00076E3B2 /* Names.swift in Sources */,
 				F6110C6D1D82DE400076E3B2 /* PresentingVC.swift in Sources */,
 				F6110C6B1D82D85F0076E3B2 /* ExplanationText.swift in Sources */,
 				F62CB2381D82AEDD00FB6A3D /* SelectionVC.swift in Sources */,
 				F62CB2361D82AEDD00FB6A3D /* AppDelegate.swift in Sources */,
 				F6110C6F1D82DEC60076E3B2 /* FirstCustomAnimationController.swift in Sources */,
+				F6110C7F1D86DEE70076E3B2 /* ThirdCustomAnimationController.swift in Sources */,
 				F6110C691D82CEB90076E3B2 /* BlurEffect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

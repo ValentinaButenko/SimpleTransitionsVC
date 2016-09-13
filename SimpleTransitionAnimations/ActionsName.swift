@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct ActionsName {
     static let first = "first_button_clicked"
     static let second = "second_button_clicked"

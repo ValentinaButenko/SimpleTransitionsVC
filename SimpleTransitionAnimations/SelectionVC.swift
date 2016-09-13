@@ -128,7 +128,7 @@ class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
 
     func setupExplanationTextFirstButton(){
         let textView = ExplanationText()
-        textView.explanatoryLabel.text = "First"
+        textView.explanatoryLabel.text = "Smooth Pop-Un"
         self.firstButton.addSubview(textView)
 
         textView.snp_makeConstraints { (make) in
@@ -139,7 +139,7 @@ class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
 
     func setupExplanationTextSecondButton(){
         let textView = ExplanationText()
-        textView.explanatoryLabel.text = "Second"
+        textView.explanatoryLabel.text = "Height Separation"
         self.secondButton.addSubview(textView)
 
         textView.snp_makeConstraints { (make) in
@@ -150,7 +150,7 @@ class SelectionVC: UIViewController, UIViewControllerTransitioningDelegate {
 
     func setupExplanationTextThirdButton(){
         let textView = ExplanationText()
-        textView.explanatoryLabel.text = "Third"
+        textView.explanatoryLabel.text = "Width Separation"
         self.thirdButton.addSubview(textView)
 
         textView.snp_makeConstraints { (make) in

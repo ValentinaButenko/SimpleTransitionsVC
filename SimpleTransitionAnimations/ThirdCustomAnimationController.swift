@@ -11,8 +11,9 @@ import UIKit
 
 class ThirdCustomAnimationController: NSObject, UIViewControllerAnimatedTransitioning{
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 0.4
+        return 0.6
     }
+
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
@@ -20,44 +21,35 @@ class ThirdCustomAnimationController: NSObject, UIViewControllerAnimatedTransiti
         let containerView = transitionContext.containerView()
 
         toViewController.view.frame = finalFrameForVC
-        toViewController.view.alpha = 0.0
-        fromViewController.view.alpha = 0.8
-
+        toViewController.view.alpha = 0.8
         containerView?.addSubview(toViewController.view)
         containerView?.sendSubviewToBack(toViewController.view)
 
-        let firstSnapshotView = toViewController.view.resizableSnapshotViewFromRect(CGRectMake(toViewController.view.frame.minX, toViewController.view.frame.minY, toViewController.view.frame.width/2, toViewController.view.frame.height), afterScreenUpdates: false, withCapInsets: UIEdgeInsetsZero)
+        let firstSnapshotView = fromViewController.view.resizableSnapshotViewFromRect(CGRectMake(fromViewController.view.frame.minX, fromViewController.view.frame.minY, fromViewController.view.frame.width/2, fromViewController.view.frame.height), afterScreenUpdates: false, withCapInsets: UIEdgeInsetsZero)
+        let secondSnapshotView = fromViewController.view.resizableSnapshotViewFromRect(CGRectMake(fromViewController.view.frame.width/2, fromViewController.view.frame.minY, fromViewController.view.frame.width/2, fromViewController.view.frame.height), afterScreenUpdates: false, withCapInsets: UIEdgeInsetsZero)
 
-        let secondSnapshotView = toViewController.view.resizableSnapshotViewFromRect(CGRectMake(toViewController.view.frame.width/2, toViewController.view.frame.minY, toViewController.view.frame.width/2, toViewController.view.frame.height), afterScreenUpdates: false, withCapInsets: UIEdgeInsetsZero)
+        firstSnapshotView.frame = CGRectMake(fromViewController.view.frame.minX, fromViewController.view.frame.minY, fromViewController.view.frame.width/2, fromViewController.view.frame.height)
+        secondSnapshotView.frame = CGRectMake(fromViewController.view.frame.width/2, fromViewController.view.frame.minY, fromViewController.view.frame.width/2, fromViewController.view.frame.height)
 
-        firstSnapshotView.frame = CGRectMake(-toViewController.view.frame.width/2, toViewController.view.frame.minY, toViewController.view.frame.width/2, toViewController.view.frame.height)
-        secondSnapshotView.frame = CGRectMake(toViewController.view.frame.width, toViewController.view.frame.minY, toViewController.view.frame.width/2, toViewController.view.frame.height)
-
-        firstSnapshotView.alpha = 0.5
-        secondSnapshotView.alpha = 0.5
+        firstSnapshotView.alpha = 0.8
+        secondSnapshotView.alpha = 0.8
 
         containerView?.addSubview(firstSnapshotView)
         containerView?.addSubview(secondSnapshotView)
 
+        fromViewController.view.removeFromSuperview()
+
+
         UIView.animateWithDuration(transitionDuration(transitionContext),
                                    delay: 0.0,
-                                   options: .CurveEaseOut,
-                                   animations: {
-                                    firstSnapshotView.frame = CGRectMake(toViewController.view.frame.minX,
-                                                                            toViewController.view.frame.minY,
-                                                                            toViewController.view.frame.width/2,
-                                                                            toViewController.view.frame.height)
-                                    secondSnapshotView.frame = CGRectMake(toViewController.view.frame.width/2,
-                                                                            toViewController.view.frame.minY,
-                                                                            toViewController.view.frame.width/2,
-                                                                            toViewController.view.frame.height)
-                                    firstSnapshotView.alpha = 1.0
-                                    secondSnapshotView.alpha = 1.0
-                                    },
-                                   completion: {_ in toViewController.view.alpha = 1.0
-                                                     firstSnapshotView.removeFromSuperview()
-                                                     secondSnapshotView.removeFromSuperview()
-                                                     transitionContext.completeTransition(true)})
-
+                                   usingSpringWithDamping: 1,
+                                   initialSpringVelocity: 0.0,
+                                   options: .CurveEaseIn,
+                                   animations: {firstSnapshotView.frame = CGRectMake(-fromViewController.view.frame.width/2, fromViewController.view.frame.minY, fromViewController.view.frame.width/2, fromViewController.view.frame.height)
+                                    secondSnapshotView.frame = CGRectMake(fromViewController.view.frame.width, fromViewController.view.frame.minY, fromViewController.view.frame.width/2, fromViewController.view.frame.height)
+                                    toViewController.view.alpha = 1.0},
+                                   completion: {_ in firstSnapshotView.removeFromSuperview()
+                                    secondSnapshotView.removeFromSuperview()
+                                    transitionContext.completeTransition(true)})
     }
 }

@@ -12,7 +12,7 @@ import UIKit
 class FirstCustomAnimationController: NSObject, UIViewControllerAnimatedTransitioning{
 
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 1.0
+        return 0.8
     }
 
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -24,13 +24,17 @@ class FirstCustomAnimationController: NSObject, UIViewControllerAnimatedTransiti
         toViewController.view.frame = CGRectOffset(finalFrameForVC, 0, bounds.size.height)
         containerView!.addSubview(toViewController.view)
 
-        UIView.animateWithDuration(transitionDuration(transitionContext), delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.0, options: .CurveLinear, animations: {
-            fromViewController.view.alpha = 0.6
-            toViewController.view.frame = finalFrameForVC
-            }, completion: {
-                finished in
-                transitionContext.completeTransition(true)
-                fromViewController.view.alpha = 1.0
-        })
+        UIView.animateWithDuration(transitionDuration(transitionContext), delay: 0.0,
+                                   usingSpringWithDamping: 0.6,
+                                   initialSpringVelocity: 0.0,
+                                   options: .CurveLinear,
+                                   animations: {
+                                        fromViewController.view.alpha = 0.6
+                                        toViewController.view.frame = finalFrameForVC
+                                    },
+                                   completion: {
+                                        _ in
+                                        transitionContext.completeTransition(true)
+                                        fromViewController.view.alpha = 1.0})
     }
 }

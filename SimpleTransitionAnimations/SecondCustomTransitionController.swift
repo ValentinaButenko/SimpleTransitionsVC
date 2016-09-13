@@ -41,6 +41,8 @@ class SecondCustomTransitionController: NSObject, UIViewControllerAnimatedTransi
 
         UIView.animateWithDuration(transitionDuration(transitionContext),
                                    delay: 0.0,
+                                   usingSpringWithDamping: 1,
+                                   initialSpringVelocity: 0.0,
                                    options: .CurveEaseIn,
                                    animations: {firstSnapshotView.frame = CGRectMake(fromViewController.view.frame.width,
                                                                                     fromViewController.view.frame.minY,
@@ -56,8 +58,4 @@ class SecondCustomTransitionController: NSObject, UIViewControllerAnimatedTransi
                                                         transitionContext.completeTransition(true)})
     }
 }
-
-
-
-
 

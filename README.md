@@ -7,3 +7,6 @@ The project was created for illustration purpose.
 
 The project uses two Pods: 
 *SnapKit* to setup constraints from code and *SwiftEventBus* for publich/subscribe communication between components. 
+
+
+![alt tag](https://github.com/ValentinaButenko/SimpleTransitionsVC/blob/master/SimpleTransitionVC.gif)
